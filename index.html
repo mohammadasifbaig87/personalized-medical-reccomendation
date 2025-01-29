@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized Medicine Recommendation System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: url('https://source.unsplash.com/1600x900/?health,medicine') no-repeat center center/cover;
+            height: 100vh;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+            color: green;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+            color: green;
+        }
+
+        .navbar {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 10;
+        }
+
+        .navbar .navbar-brand {
+            color: white;
+            font-weight: bold;
+        }
+
+        .navbar .navbar-brand:hover {
+            color: #00FFFF;
+        }
+
+        .navbar .nav-link {
+            color: white;
+            font-weight: bold;
+        }
+
+        .navbar .nav-link:hover {
+            color: #00FFFF;
+        }
+
+        .btn-light {
+            background-color: #00FFFF;
+            color: black;
+            font-size: 1.2rem;
+            padding: 0.5rem 1.5rem;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+        }
+
+        .btn-light:hover {
+            background-color: #00CED1;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 1);
+        }
+
+        section {
+            padding: 5rem 0;
+        }
+
+        .about, .features, .contact {
+            background: #f8f9fa;
+            padding: 3rem;
+            text-align: center;
+        }
+
+        .about h2, .features h2, .contact h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .about p, .features p, .contact p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Medicine Recommendation</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                    <!-- Add Login and Register links -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.html">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home">
+        <h1>Welcome to the Personalized Medicine Recommendation System</h1>
+        <p>Predict diseases and get recommendations for medications and precautions with ease</p>
+        <a href="#about" class="btn btn-light">Learn More</a>
+    </header>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>
+            Welcome to the Personalized Medicine Recommendation System, your ultimate destination for advanced health technology.
+            Our mission is to empower users to make informed health decisions by predicting diseases based on symptoms and providing tailored
+            recommendations for medications and precautions. Leveraging cutting-edge machine learning, we aim to simplify healthcare and make
+            it more accessible for everyone.
+        </p>
+    </section>
+
+    <section id="features" class="features">
+        <h2>Features</h2>
+        <ul>
+            <li>Predict diseases based on symptoms.</li>
+            <li>Get personalized medication and precaution recommendations.</li>
+            <li>Easy-to-use interface for quick health decisions.</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>
+            If you have any questions or need assistance, feel free to reach out to us:
+        </p>
+        <p>Email: support@medicine.com</p>
+        <p>Phone: +123 456 7890</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Personalized Medicine Recommendation System. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
